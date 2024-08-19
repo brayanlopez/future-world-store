@@ -1,18 +1,22 @@
 "use client";
-import Image from "next/image";
-import styles from "@/sass/global-error.module.sass";
 
-export default function GlobalError({ reset }: any) {
+import { useEffect } from "react";
+
+interface ErrorProps {
+  error: Error;
+  reset: () => void;
+}
+
+export default function Error({ error, reset }: ErrorProps) {
+  useEffect(() => {
+    console.log(error);
+  }, []);
+
   return (
-    <main className={styles.Error}>
-      <h1 className={styles.Error__title}>Ha ocurrido un error</h1>
-      <Image src="/images/error.png" width={500} height={500} alt="Error" />
-      <p className={styles.Error__message}>
-        Al parecer ha ocurrido un error, pero no te sientas mal
-      </p>
-      <button className={styles.Error__button} onClick={reset}>
-        Volver a intentar
-      </button>
-    </main>
+    <div style={{ padding: "10rem" }}>
+      <h1>:c</h1>
+      <p>Ha ocurrido un error</p>
+      <button onClick={reset}>Intentar de nuevo</button>
+    </div>
   );
 }
