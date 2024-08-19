@@ -8,6 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const nextConfig = {
+  basePath: "future-world-store",
+  output: "export",
   sassOptions: {
     includePaths: [join(__dirname, "src/sass")],
     prependData: `@import "main.sass"`,
