@@ -16,9 +16,9 @@ const nextConfig = {
     prependData: `@import "main.sass"`,
   },
   // TODO: check this image config
-  images: {
-    remotePatterns: [{ hostname: "cdn.shopify.com", protocol: "https" }],
-  },
+  // images: {
+  //   remotePatterns: [{ hostname: "cdn.shopify.com", protocol: "https" }],
+  // },
 };
 
 export default nextConfig;

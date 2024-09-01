@@ -1,3 +1,6 @@
+import { ProductsWrapper } from "@/components/store";
+import { getProducts } from "@/services/products";
+
 interface CategoriesProps {
   params: {
     categories: string[];
@@ -9,5 +12,6 @@ interface CategoriesProps {
 
 export default function Category(props: CategoriesProps) {
   const { categories } = props.params;
-  return <h1>Categoria dinámica: {categories}</h1>;
+  const products = getProducts();
+  return <ProductsWrapper products={products} />;
 }
