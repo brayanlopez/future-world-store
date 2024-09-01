@@ -32,7 +32,7 @@ export const Description = () => {
             priority={false}
             placeholder="blur"
             blurDataURL={PLACEHOLDER_IMAGE}
-          />  
+          />
         </div>
       </button>
       <div className={styles.Description__text}>
