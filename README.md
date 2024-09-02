@@ -43,3 +43,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] Check shopify creation, config and other related issues (video 18)
 - [ ] Add products in csv to shopify (video 19)
 - [ ] Check get information from shopify (video 20)
+- [ ] Check types and integration backend logic.

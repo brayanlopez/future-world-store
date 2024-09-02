@@ -1,4 +1,4 @@
-export const getProducts = (): Array<ProductType> => [
+export const getProducts = (id?: string): Array<ProductType> => [
   {
     id: "string",
     title: "string",
